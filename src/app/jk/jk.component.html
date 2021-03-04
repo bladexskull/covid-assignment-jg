@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="row justify-content-md-center mb-3 mb-xl-5">
+      <div class="col-12 col-xl-6">
+        <div class="row">
+          <div class="col-12 col-xl-12 mb-2 px-1">
+            <div class="card bg-def text-white">
+              <div class="card-body text-center p-1 p-xl-3">
+                <h5>Total</h5>
+                <span class="h1">{{ jktotal.confirmed+jktotal.recovered+jktotal.deaths }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-xl-4 mb-2 px-1">
+            <div class="card bg-success h-100">
+              <div class="card-body text-center p-1 p-xl-3">
+                <h5>Cured</h5>
+                <span class="h1">{{ jktotal.confirmed }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-xl-4 mb-2 px-1">
+            <div class="card bg-warning h-100">
+              <div class="card-body text-center p-1 p-xl-3">
+                <h5>Healing</h5>
+                <span class="h1">{{ jktotal.recovered }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-xl-4 mb-2 px-1">
+            <div class="card bg-dark text-white h-100">
+              <div class="card-body text-center p-1 p-xl-3">
+                <h5>Deaths</h5>
+                <span class="h1">{{jktotal.deaths }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div  class="col-12 col-xl-12 mb-2 px-1">
+      <div class="card bg-dark text-white h-100">
+        <div class="card-body text-center p-1 p-xl-3">
+          <span><h1 style="color: aliceblue;">DISTRICT WISE DATA OF JAMMU AND KASHMIR!</h1></span>
+        </div>
+      </div>
+    </div> 
+  
+    <!-- <button (click)="cons()" >Console India data</button> -->
+  
+    <div class="row">
+      <div class="col-12 col-xl-12 px-1">
+        <div class="card bg-def text-white mb-3">
+          <!-- <div class="card-header">
+            <h5>Province</h5>
+          </div> -->
+          <div class="table-responsive">
+            <table class="table table-sm table-hover text-white" id="table-province">
+              <thead>
+                <tr class="tab-header">
+                  <th class="text-center">STATE</th>
+                  <th class="text-left">ACTIVE</th>
+                  <th class="text-right">RECOVERED</th>
+                  <th class="text-right">DECEASED</th>
+                  <th class="text-right">RECOVERED</th>
+  
+                </tr>
+              </thead>
+              <tbody>
+                  <tr  *ngFor="let item of JKdata | keyvalue"  class="tr-hover">
+                  <td class="text-center"> {{item.key}}</td>
+                  <td class="text-center"> {{item.value.active}}</td>
+                  <td class="text-center"> {{item.value.recovered}}</td>
+                  <td class="text-center"> {{item.value.deceased}}</td>
+                  <td class="text-center"> {{item.value.recovered}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  

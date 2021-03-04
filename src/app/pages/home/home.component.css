@@ -1,0 +1,8 @@
+.bg-def {
+  background: #103e95;
+}
+
+.tr-hover:hover {
+  color:black;
+  background: #ffffff !important;
+}
