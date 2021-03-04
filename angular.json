@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "covid19-online": {
+    "covid19-assignment": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/covid19-online",
+            "outputPath": "dist/covid19-assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "covid19-online:build"
+            "browserTarget": "covid19-assignment:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "covid19-online:build:production"
+              "browserTarget": "covid19-assignment:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "covid19-online:build"
+            "browserTarget": "covid19-assignment:build"
           }
         },
         "test": {
@@ -115,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "covid19-online:serve"
+            "devServerTarget": "covid19-assignment:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "covid19-online:serve:production"
+              "devServerTarget": "covid19-assignment:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "covid19-online",
+  "defaultProject": "covid19-assignment",
   "cli": {
     "analytics": false
   }
