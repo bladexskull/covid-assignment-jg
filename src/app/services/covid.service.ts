@@ -25,4 +25,5 @@ export class CovidService {
     
   }
   IndData:any;
+  worlddata:any;
 }

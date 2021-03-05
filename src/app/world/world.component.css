@@ -1,0 +1,13 @@
+.bg-def {
+    background: #103e95;
+  }
+  .tab-header{
+      background-color: brown;
+  }
+  /* .tr-hover{
+      background-color: blueviolet;
+  } */
+  .tr-hover:hover {
+    color: black;
+    background: #ffffff !important;
+  }

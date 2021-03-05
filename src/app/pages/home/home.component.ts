@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       this.homecomponentcalled=true;
       // console.log(this.covidService.IndData);
       console.log(this.IndiaData);
-      
+      this.covidService.worlddata=data;
     });
     if(this.homecomponentcalled){
       this.isloading=true;

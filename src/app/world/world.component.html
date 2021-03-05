@@ -1,0 +1,106 @@
+<p>world works!</p>
+<!-- <div ng-if="isloading">
+  Loading...
+</div> -->
+<!-- <img ng-if="!false" src="/assets/images/Wedges-3s-200px.gif"  /> -->
+<!-- <img src="/assets/images/Chasing arrows.gif" /> -->
+<img src="/assets/images/Coronavirus.gif" />
+
+
+<!-- <img id="spinner" ng-src="./Wedges-3s-200px.gif"  >  -->
+<!-- <div ng-if="!isloading">
+  Loading... -->
+<div class="container">
+  <div class="row justify-content-md-center mb-3 mb-xl-5">
+    <div class="col-12 col-xl-12 mb-2 px-1">
+      <div class="card bg-danger text-white">
+        <div class="card-body text-center p-1 p-xl-3">
+          <p></p><h1></h1>
+          <span class="h1">WORLD STATISTICS!</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-12">
+      <div class="row">
+        <div class="col-12 col-xl-12 mb-2 px-1">
+          <div class="card bg-def text-white">
+            <div class="card-body text-center p-1 p-xl-3">
+              <h5>Total</h5>
+              <!-- <span class="h1">{{ totaldata.confirmed+totaldata.recovered+totaldata.deaths }}</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-xl-4 mb-2 px-1">
+          <div class="card bg-success h-100">
+            <div class="card-body text-center p-1 p-xl-3">
+              <h5>Confirmed</h5>
+              <!-- <span class="h1">{{ totaldata.confirmed }}</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-xl-4 mb-2 px-1">
+          <div class="card bg-warning h-100">
+            <div class="card-body text-center p-1 p-xl-3">
+              <h5>Recovered</h5>
+              <!-- <span class="h1">{{ totaldata.recovered}}</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-xl-4 mb-2 px-1">
+          <div class="card bg-info h-100">
+            <div class="card-body text-center p-1 p-xl-3">
+              <h5>Deaths</h5>
+              <!-- <span class="h1">{{ totaldata.deaths}}</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div  class="col-12 col-xl-12 mb-2 px-1">
+    <div class="card bg-dark text-white h-100">
+      <div class="card-body text-center p-1 p-xl-3">
+        <span><h1 style="color: aliceblue;">State Wise Data!</h1></span>
+      </div>
+    </div>
+  </div> 
+
+  <!-- <button (click)="cons()" >Console India data</button> -->
+
+  <div class="row">
+    <div class="col-12 col-xl-12 px-1">
+      <div class="card bg-def text-white mb-3">
+        <!-- <div class="card-header">
+          <h5>Province</h5>
+        </div> -->
+        <div class="table-responsive">
+          <table class="table table-sm table-hover text-white" id="table-province">
+            <thead>
+              <tr>
+                <th class="text-center">COUNTRY</th>
+                <th class="text-left">CONFIRMED</th>
+                <!-- <th class="text-right">ACTIVE</th> -->
+                <th class="text-right">CURED</th>
+                <th class="text-right">DEATHS</th>
+
+              </tr>
+            </thead>
+            <tbody>
+                <!-- <div *ngFor="let item of testObject | keyvalue">
+                  Key: <b>{{item.key}}</b> and Value: <b>{{item.value}}</b>
+              </div> -->
+                <tr  *ngFor="let item of worlddata | keyvalue"  class="tr-hover">
+                <td class="text-center"> {{item.key}}</td>
+                <td class="text-center"> {{item.value.All.confirmed}}</td>
+                <td class="text-center"> {{item.value.All.recovered}}</td>
+                <td class="text-center"> {{item.value.All.deaths}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- </div> -->
