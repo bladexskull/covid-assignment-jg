@@ -14,11 +14,8 @@ export class JKComponent implements OnInit {
   JKdata:any;
   jktotal:any;
   ngOnInit(): void {
-    this.covidService.getIndiaStateData().subscribe(data=>{
-      this.JKdata=data["Jammu and Kashmir"]["districtData"];
-      console.log(this.JKdata);
-      this.jktotal=this.covidService.IndData["Jammu and Kashmir"];
-    });
+   this.JKdata=this.covidService.JKData;
+   this.jktotal=this.covidService.IndStateData['Jammu and Kashmir'];
   }
 
 }

@@ -24,6 +24,8 @@ export class CovidService {
     console.log(data);
     
   }
-  IndData:any;
+  IndStateData:any;
   worlddata:any;
+  totalIndiaData:any;
+  JKData:any;
 }
