@@ -1,8 +1,14 @@
 .bg-def {
-  background: #103e95;
+  background: #090a0c;
 }
 
+.jumbotron{
+  /* background-color: aqua; */
+  height: 200px;
+  width: 10000x;;
+}
 .tr-hover:hover {
   color:black;
   background: #ffffff !important;
 }
+

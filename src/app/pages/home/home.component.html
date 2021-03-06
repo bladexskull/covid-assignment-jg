@@ -9,17 +9,25 @@
 <!-- <img id="spinner" ng-src="./Wedges-3s-200px.gif"  >  -->
 <!-- <div ng-if="!isloading">
   Loading... -->
+  
 <div class="container">
+  
+  
+  <div class="jumbotron " >
   <div class="row justify-content-md-center mb-3 mb-xl-5">
     <div class="col-12 col-xl-12 mb-2 px-1">
-      <div class="card bg-danger text-white">
+      <div class="card bg-light text-white">
         <div class="card-body text-center p-1 p-xl-3">
           <p></p><h1></h1>
-          <span class="h1">Welcome to Covid-19 Portal India !</span>
+          <span style="color:teal;" class="h1">Welcome to Covid-19 Portal India !</span>
         </div>
       </div>
     </div>
-    <div class="col-12 col-xl-12">
+  </div>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div><br><br><br><br><br>
+
+    <br><br><div class="col-12 col-xl-12">
+      <br>
       <div class="row">
         <div class="col-12 col-xl-12 mb-2 px-1">
           <div class="card bg-def text-white">
@@ -101,5 +109,11 @@
       </div>
     </div>
   </div>
-  </div>
-<!-- </div> -->
+  
+  <!-- <div *ngIf="loaded"> -->
+  <!-- <div *ngFor="let it of GlobalDataList.data; let j=index"; > -->
+    <!-- <div *ngFor="let item of GlobalDataList.data | keyvalue" >
+    <p>{{item.key}}</p> -->
+  <!-- </div> -->
+</div>
+

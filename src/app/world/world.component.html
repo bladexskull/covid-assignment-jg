@@ -11,17 +11,20 @@
 <!-- <div ng-if="!isloading">
   Loading... -->
 <div class="container">
+  <div class="jumbotron" >
   <div class="row justify-content-md-center mb-3 mb-xl-5">
     <div class="col-12 col-xl-12 mb-2 px-1">
-      <div class="card bg-dark text-white" >
+      <div class="card  text-white" >
         <div class="card-body text-center p-1 p-xl-3">
           <p></p><h1></h1>
-          <span class="h1">WORLD STATISTICS!</span>
+          <span style="color:teal;" class="h1">World Statistics!</span>
         </div>
       </div>
     </div>
-  
   </div>
+  </div>
+
+  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 
   <div  class="col-12 col-xl-12 mb-2 px-1">
     <div class="card  text-white h-100" style="background-color: black;">
@@ -31,6 +34,7 @@
     </div>
   </div> 
 
+  
   <!-- <button (click)="cons()" >Console India data</button> -->
 
   <div class="row">

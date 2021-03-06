@@ -1,5 +1,5 @@
   .bg-def {
-    background: #103e95;
+    background: #090a0c;
   }
   .tab-header{
       background-color: brown;
@@ -11,3 +11,9 @@
     color: black;
     background: #ffffff !important;
   }
+  
+.jumbotron{
+  /* background-color: aqua; */
+  height: 200px;
+  width: 10000x;;
+}

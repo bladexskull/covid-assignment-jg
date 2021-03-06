@@ -1,3 +1,9 @@
 .mt-5{
     background-image: url("/assets/images/Coronavirus.gif");
 }
+.nav-link{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}

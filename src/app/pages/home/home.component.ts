@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CovidService } from 'src/app/services/covid.service';
+import * as CanvasJS from 'canvasjs/dist/canvasjs.min';
+// import * as CanvasJS from 'src/assets/scripts/canvasjs/dist/canvasjs.min';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +10,13 @@ import { CovidService } from 'src/app/services/covid.service';
 })
 export class HomeComponent implements OnInit {
 
+  
+
   public IndiaData:any;
   public totaldata:any;
   public isloading:any;
+  // GlobalDataList:any;
+  // loaded:boolean=false;
   constructor(private covidserviceobj : CovidService) { }
   homecomponentcalled:boolean=false;
   ngOnInit(): void {
@@ -33,11 +40,42 @@ export class HomeComponent implements OnInit {
       console.log(this.totaldata);
       // this.homecomponentcalled=true;
       console.log(this.IndiaData);
+      // this.GlobalDataList={
+      //   f:"a",
+      //   usage:"some",
+      //   data:{a:"one",b:"two",c:"three"},
+      // };
+      // this.loaded=true;
+
+
+      // let chart = new CanvasJS.Chart("chartContainer", {
+        // animationEnabled: true,
+      //   exportEnabled: true,
+      //   title: {
+      //     text: "Basic Column Chart in Angular"
+      //   },
+      //   data: [{
+      //     type: "column",
+      //     dataPoints: [
+      //       { y: this.totaldata.confirmed, label: "Active" },
+      //       { y: this.totaldata.confirmed, label: "Recovered" },
+      //       { y: this.totaldata.confirmed, label: "Deaths" },
+      //     ]
+      //   }]
+      // });
+        
+      // chart.render();
+  
+
+ 
+
   };
     // if(this.homecomponentcalled){
     //   this.isloading=true;
     //   this.IndiaData=this.covidService.IndData;
     // };
+    
+    
 
   }
 
