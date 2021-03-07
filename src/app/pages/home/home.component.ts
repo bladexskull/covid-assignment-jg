@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CovidService } from 'src/app/services/covid.service';
 import * as CanvasJS from 'canvasjs/dist/canvasjs.min';
+import { NgxPaginationModule } from 'ngx-pagination';
 // import * as CanvasJS from 'src/assets/scripts/canvasjs/dist/canvasjs.min';
 
 @Component({

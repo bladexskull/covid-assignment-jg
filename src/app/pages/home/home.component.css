@@ -1,10 +1,10 @@
 .bg-def {
-  background: #090a0c;
+  background: #0f0f0f;
 }
 
 .jumbotron{
   /* background-color: aqua; */
-  height: 200px;
+  height: 500px;
   width: 10000x;;
 }
 .tr-hover:hover {

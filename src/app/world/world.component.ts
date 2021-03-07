@@ -33,7 +33,7 @@ export class WorldComponent implements OnInit {
       }]
     });
       
-    chart.render();
+    // chart.render();
 
 
   }

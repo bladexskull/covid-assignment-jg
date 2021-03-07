@@ -10,6 +10,7 @@ import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.compone
 import { HttpClientModule } from '@angular/common/http';
 import { JKComponent } from './jk/jk.component';
 import { WorldComponent } from './world/world.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { WorldComponent } from './world/world.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-
+    NgxPaginationModule
   ],
   providers: [
     CovidService
